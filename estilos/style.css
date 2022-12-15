@@ -1,0 +1,120 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn:ital@0;1&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=Vollkorn:ital@0;1&display=swap');
+
+@font-face {
+    font-family: Bright;
+    src: url(Bright\ DEMO.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+ :root {
+    --fonte1: 'Vollkorn', serif;
+    --fonte2: 'La Belle Aurore', cursive;
+    --fonte3: 'Bright'
+
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+html, body {
+    min-height: 100vh;
+    background-color: rgb(18, 82, 138);
+}
+
+header {
+    background-color:#77a2b3;
+    color: white;
+    text-align: center; 
+} 
+
+header > h1 {
+    padding-top: 100px;
+    font-family: var(--fonte3);
+    font-weight: normal;
+    font-size: 20vh;
+}
+
+header > nav {
+    color: white;
+    padding-bottom: 20px;
+    font-family: var(--fonte1);
+}
+
+header a, footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+header a:hover, footer a:hover {
+ text-decoration: underline;
+}
+
+section {
+    font-family: var(--fonte1);
+    font-size: 5vh;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    line-height: 2em;
+
+}
+
+section > p {
+    padding-bottom: 2em;
+}
+
+article {
+    font-family: var(--fonte2);
+    font-weight: lighter;
+    font-size: 1.5em;
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.imagem {
+    background-color: rgb(59, 53, 53);
+    color: white;
+    box-shadow: inset 5px 5px 15px 0px rgba(0, 0, 0, 0.329);
+}
+
+section#img1 {
+    background-image: url('../imagens/harry003.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+  
+}
+
+section#img2 {
+    background-image: url('../imagens/harry002.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+
+}
+
+section.imagem > p, article {
+    width: 400px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.315);
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
