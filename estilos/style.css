@@ -80,14 +80,11 @@ section.imagem > p {
 section.letra {
     max-width: 400px;
     padding: 10px;
-    margin: 20px;
+    margin: 20px 20px 20px 0px;
     background-color: rgba(0, 0, 0, 0.315);
 
     font-family: var(--fonte2);
     font-weight: lighter;
-    
-    
-    
 }
 
 section.normal {
