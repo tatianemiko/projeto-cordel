@@ -69,17 +69,24 @@ section {
 
 }
 
-section.imagem > p, article {
+section.imagem > p {
     display: inline-block;
     padding: 5px;
+    margin: auto;
     background-color: black;
     text-shadow: 1px 1px 0px black;
 }
 
-article {
+section.letra {
+    max-width: 400px;
+    padding: 10px;
+    margin: 20px;
+    background-color: rgba(0, 0, 0, 0.315);
+
     font-family: var(--fonte2);
     font-weight: lighter;
-    font-size: 1.5em;
+    
+    
     
 }
 
@@ -110,8 +117,8 @@ section#img2 {
 
 }
 
-section.imagem > p, article {
-    width: 400px;
+section.imagem > p {
+    max-width: 400px;
     padding: 10px;
     background-color: rgba(0, 0, 0, 0.315);
 }
